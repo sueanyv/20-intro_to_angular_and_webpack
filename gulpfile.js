@@ -6,8 +6,8 @@ const mocha = require('gulp-mocha');
 
 gulp.task('test', function() {
   gulp.src('./test/*-test.js', {
-      read: false
-    })
+    read: false
+  })
     .pipe(mocha({
       reporter: 'spec'
     }));
